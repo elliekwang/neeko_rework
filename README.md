@@ -38,6 +38,14 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
 | ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | sup        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       3853 |     4681 |       28 |            448 |          450 |            3 |           1 |             4 |            0 |        1 |
 
 ## Univariate Data:
+<iframe
+  src="univariate/file-name.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+This plot shows the distribution of positions that Neeko played. From the plot, we can see that `mid` is the most played position by Neeko. 
 
 ## Bivariate Data:
 <iframe
