@@ -14,7 +14,7 @@ For our project, we are interested in exploring dataset about the game League of
 
 # Data Cleaning and Exploratory Data Analysis
 
-## **Data Cleaning**
+## Data Cleaning
 
 For our project, we worked with smaller dataframes taken from `league`, which is the dataframe that concats together League of Legends datasets from Oracle's Elixir from the years 2021, 2022, 2023, and 2024. To appropriately clean the data, we:
 
@@ -37,9 +37,9 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
 | ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | bot        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       5202 |     5053 |      130 |            124 |          102 |           10 |           0 |             4 |            2 |        1 |
 | ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | sup        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       3853 |     4681 |       28 |            448 |          450 |            3 |           1 |             4 |            0 |        1 |
 
-## **Univariate Data**:
+## Univariate Data:
 
-## **Bivariate Data**:
+## Bivariate Data:
 <iframe
   src="assets/file-name.html"
   width="800"
@@ -47,7 +47,7 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
   frameborder="0"
 ></iframe>
 
-## **Interesting Aggregates**:
+## Interesting Aggregates:
 This is a pivot table of the number of games with neeko from patch 12.10 to 14.05, seperated by the position she was played in. It is interesting because we can see the amount of games she was played in increases over time. 
 
 | patch   |   bot |   jng |   mid |   sup |   top |   total |
@@ -107,15 +107,32 @@ A column that is important to our hypothesis test is the `patch` column. However
 
 ### 1. `patch` v. `league`
 **Observed Statistic:** 0.8440988106129917
+
 **p-value:** 0.0
+
 **Conclusion:** Since our p-value = 0.0 which is less than our alpha value of 0.5, we conclude that the missingness of `patch` **does** depend on `league`.
 
+<iframe
+  src="assets/patch1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 ### 2. `patch` v. `result`
 **Observed Statistic:** 0.00014377205594040543
+
 **p_value:**: 1.0
+
 **Conclusion:** Since our p-value = 1.0 which is greater than our alpha level of 0.05, we can conclude that the missingness of `patch` **does not** depend on the `result` column. 
+
+<iframe
+  src="assets/patch2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 
 
