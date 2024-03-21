@@ -1,13 +1,6 @@
 # neeko_rework
 UCSD DSC 80 Project - League of Legends
 
-<iframe
-  src="assets/file-name.html"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe>
-
 
 This is a data science project about League of Legends for the class DSC 80 at UCSD. 
 
@@ -33,3 +26,13 @@ For our project, we worked with smaller dataframes taken from `league`, which is
 
 
 We cleaned the dataset this way to make the data more compatible to  answer our question: is there a higher proportion of games with a Neeko in it after the Patch 13.9 rework? 
+
+print(league.head().to_markdown(index = False))
+
+### Bivariate Data:
+<iframe
+  src="assets/file-name.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
