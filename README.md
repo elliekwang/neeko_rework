@@ -27,7 +27,14 @@ For our project, we worked with smaller dataframes taken from `league`, which is
 
 We cleaned the dataset this way to make the data more compatible to  answer our question: is there a higher proportion of games with a Neeko in it after the Patch 13.9 rework? 
 
-print(league.head().to_markdown(index = False))
+| gameid                | teamid                                  |   neeko | position   | datacompleteness   | league   |   patch |   firstdragon |   firstherald |   herald_diff |   goldat15 |   xpat15 |   csat15 |   golddiffat15 |   xpdiffat15 |   csdiffat15 |   killsat15 |   assistsat15 |   deathsat15 |   result |
+|:----------------------|:----------------------------------------|--------:|:-----------|:-------------------|:---------|--------:|--------------:|--------------:|--------------:|-----------:|---------:|---------:|---------------:|-------------:|-------------:|------------:|--------------:|-------------:|---------:|
+| ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | top        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       5407 |     7536 |      114 |            748 |          -56 |           -4 |           2 |             0 |            1 |        1 |
+| ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | jng        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       6974 |     8232 |      146 |           2120 |         3405 |           62 |           3 |             2 |            0 |        1 |
+| ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | mid        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       6591 |     7827 |      158 |           1578 |          354 |           15 |           2 |             3 |            0 |        1 |
+| ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | bot        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       5202 |     5053 |      130 |            124 |          102 |           10 |           0 |             4 |            2 |        1 |
+| ESPORTSTMNT03/1632489 | oe:team:2e79800a550f87f2378dbba9368396d |       0 | sup        | complete           | KeSPA    |   10.25 |             1 |             1 |             2 |       3853 |     4681 |       28 |            448 |          450 |            3 |           1 |             4 |            0 |        1 |
+
 
 ### Bivariate Data:
 <iframe
