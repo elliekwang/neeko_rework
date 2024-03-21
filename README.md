@@ -4,14 +4,13 @@ UCSD DSC 80 Project - League of Legends
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-    <head>
+  <head>
         <meta charst = "UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
       {%- include head.html -%}
         <title> League of Legends - Neeko Analysis </title>
-<!--         <meta name = "generator" content"Jekyll v> -->
-
-    <head>
+        <meta name = "description" content = "This is a project for blah blah">
+  <head>
   <body>
 
     {%- include header.html -%}
