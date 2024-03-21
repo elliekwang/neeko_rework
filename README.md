@@ -1,4 +1,4 @@
-# neeko_rework
+# neeko_rework111111
 UCSD DSC 80 Project - League of Legends
 
 <!DOCTYPE html>
@@ -6,7 +6,7 @@ UCSD DSC 80 Project - League of Legends
 
     <head>
         <meta charst = "UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--         <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 <!--       {%- include head.html -%} -->
         <title> League of Legends - Neeko Analysis </title>
 <!--         <meta name = "generator" content"Jekyll v> -->
