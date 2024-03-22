@@ -124,6 +124,13 @@ A column that is important to our hypothesis test is the `patch` column. However
 **Conclusion:** Since our p-value = 0.0 which is less than our alpha value of 0.5, we conclude that the missingness of `patch` **does** depend on `league`.
 
 <iframe
+  src="assets/patch1_2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
+
+<iframe
   src="assets/patch1.html"
   width="800"
   height="600"
@@ -137,6 +144,13 @@ A column that is important to our hypothesis test is the `patch` column. However
 **p_value:**: 1.0
 
 **Conclusion:** Since our p-value = 1.0 which is greater than our alpha level of 0.05, we can conclude that the missingness of `patch` **does not** depend on the `result` column. 
+
+<iframe
+  src="assets/patch2_2.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 <iframe
   src="assets/patch2.html"
@@ -161,7 +175,7 @@ A column that is important to our hypothesis test is the `patch` column. However
 - Our observed statistic: 0.1404526229251691
 
 **Significance Level**: 0.05
-- This is a standard hypothesis test. 
+- We used a significance level of 5% to increase accuracy of our randomized test result. 
 
 
 **Result p-value**: 0
