@@ -239,8 +239,8 @@ Our final model probably performed better than the Baseline model because we add
 
 #### Does our model perform better for Tier 1 leagues than non-Tier 1 leagues?
 
-**Null Hypothesis**: Our model is fair. Its accuracy for Tier 1 leagues and non-Tier 1 leagues are roughly the same, and any differences are due to random chance.  
-Alternative Hypothesis: Our model is unfair. Its accuracy for non-Tier 1 leagues are lower than its accuracy for Tier 1 leagues.  
+**Null Hypothesis**: Our model is fair. Its F1 score for Tier 1 leagues and non-Tier 1 leagues are roughly the same, and any differences are due to random chance.  
+Alternative Hypothesis: Our model is unfair. Its F1 score for non-Tier 1 leagues are lower than its F1 score for Tier 1 leagues.  
 
 **Evaluation Metric**: Our evaluation metric is the F1 score because we want to balance between not having too many false positives or negatives. 
 
@@ -248,7 +248,7 @@ Alternative Hypothesis: Our model is unfair. Its accuracy for non-Tier 1 leagues
 
 **Significance Level**: 0.01
 
-From our p-value of 0.508, we fail to reject our null hypothesis. There does not seem to be any significant differences in our model's F1 prediction scores for Tier 1 and non-Tier 1 leagues. Thus, it appears that our model achieves accuracy parity for these two groups.
+From our p-value of 0.508, we fail to reject our null hypothesis. There does not seem to be any significant differences in our model's F1 prediction scores for Tier 1 and non-Tier 1 leagues. Thus, it appears that our model achieves parity for these two groups.
 
 <iframe
   src="assets/f1_hyptest.html"
