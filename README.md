@@ -126,7 +126,7 @@ A column that is important to our hypothesis test is the `patch` column. However
 <iframe
   src="assets/patch1_2.html"
   width="800"
-  height="600"
+  height="500"
   frameborder="0"
 ></iframe>
 
@@ -141,7 +141,7 @@ A column that is important to our hypothesis test is the `patch` column. However
 ### 2. `patch` v. `result`
 **Observed Statistic:** 0.00014377205594040543
 
-**p_value:**: 1.0
+**p_value:** 1.0
 
 **Conclusion:** Since our p-value = 1.0 which is greater than our alpha level of 0.05, we can conclude that the missingness of `patch` **does not** depend on the `result` column. 
 
@@ -162,26 +162,26 @@ A column that is important to our hypothesis test is the `patch` column. However
 
 # Hypothesis Testing
 
-**Question**: Is there a higher proportion of games with a Neeko in it after the Patch 13.9 rework?
+**Question:** Is there a higher proportion of games with a Neeko in it after the Patch 13.9 rework?
 
-**Null**: There is no difference in proportion of games with Neeko before and after the Patch 13.9 rework.
-
-
-**Alternative**: There is a higher proportion of games with Neeko after the Patch 13.9 rework. 
+**Null:** There is no difference in proportion of games with Neeko before and after the Patch 13.9 rework.
 
 
-**Test Statistic**: Difference in Proportion, more specifically the proportion of games with Neeko after minus before the patch 13.9
+**Alternative:** There is a higher proportion of games with Neeko after the Patch 13.9 rework. 
+
+
+**Test Statistic:** Difference in Proportion, more specifically the proportion of games with Neeko after minus before the patch 13.9
 - We chose difference in proportion because our data is categorical and directional.
 - Our observed statistic: 0.1404526229251691
 
-**Significance Level**: 0.05
+**Significance Level:** 0.05
 - We used a significance level of 5% to increase accuracy of our randomized test result. 
 
 
-**Result p-value**: 0
+**Result p-value:** 0
 - We ran 10,000 repetitions. 
 
-**Conclusion**: As the p-value is 0, we reject the null hypothesis in favor of the alternative hypothesis, which is that there is a higher proportion of games with Neeko after the Patch 13.9 rework. 
+**Conclusion:** As the p-value is 0, we reject the null hypothesis in favor of the alternative hypothesis, which is that there is a higher proportion of games with Neeko after the Patch 13.9 rework. 
 
 
 
