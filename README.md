@@ -9,7 +9,8 @@ Names: Joyce Hu and Ellie Wang
 
 # Introduction
 
-For our project, we are interested in exploring dataset about the game League of Legends from Oracle's Elixir. As League of Legends continues to constantly update the game, there are changes to all aspects that we want to investigate. More specifically, we aim to answer qusetions about the champion Neeko.
+For our project, we are interested in exploring dataset about the game League of Legends from Oracle's Elixir. As League of Legends continues to constantly update the game, there are changes to all aspects that we want to investigate. 
+In this project, we will focus on Neeko, one of the League of Legends champions. Released in 2018, Neeko is a mage champion with chameleon-like abilities. Despite her potential to confuse opponents through shapeshifting, she was not a popular champion--especially in pro play. However, following Patch 13.9, Neeko gained many significant changes to her abilities and power. Thus, we will focus on how those changes may have affected her popularity in League of Legends.
 
 
 # Data Cleaning and Exploratory Data Analysis
