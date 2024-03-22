@@ -183,6 +183,57 @@ A column that is important to our hypothesis test is the `patch` column. However
 
 **Conclusion:** As the p-value is 0, we reject the null hypothesis in favor of the alternative hypothesis, which is that there is a higher proportion of games with Neeko after the Patch 13.9 rework. 
 
+# Prediction
+#### Can we predict whether Neeko's team wins the game based on her stats at 15 minutes?
+Our prediction problem focuses on trying to predict whether Neeko's team can win the game at 15 minutes because that is when the team can choose to forfeit the game if they think they will lose. 
+
+For our prediction problem, we are performing binary classification. Our response variable is the `result` column, where the values represent whether Neeko's team won the game or not. We chose this variable because it is a interpretable measure of success (win or loss) and aligns well with our objective of prediciting the game outcomes. 
+
+The metric we chose for evaluating the model's performance is recall because it is more harmful to the team to forfeit when they could have won. False positives are less harmful because even if they lose later on, forfeiting is a guaranteed loss. However, we will also consider the F1-score just to make sure there is balance between the recall and precision of our model. 
+
+We will include 2021 data in our training model to include more data into the model. It is not a concern because Neeko doesn't change much between seasons. 
+
+### Baseline Model
+
+**Here is a list with explanations of the columns we will be looking at for our baseline model:**
+
+`goldat15`: Total amount of gold accumulated by Neeko at 15 minutes.
+
+`xpat15`: Total amount of experience points earned by Neeko at 15 minutes. 
+
+`csat15`: Total number of minion kills by Neeko's **team** at 15 minutes. 
+
+`killsat15`: Total number of enemy champions killed by Neeko at 15 minutes. 
+
+`assistsat15`:	Total number of assists obtained by Neeko at 15 minutes. 
+
+`deathsat15`: Total number of deaths of Neeko at 15 minutes.
+
+`position`: Neeko's position in the game (`bot`, `top`, `mid`, `sup`, and `jng`) 
+
+
+Our baseline model is a binary classifier using a `LogisticRegression` model that predicts whether Neeko's team wins the game or not given features recorded at 15 minutes of the game. 
+
+For the baseline, we included nominal features, which are the one-hot encoded columns of Neeko's position, and the quantitative columns of Neeko's gold, experience points, number of minions, deaths, kills, and assists at 15 minutes. 
+
+We performed the one hot endcoding using the `OneHotEncoder()` method from scikit-learn.
+
+#### Baseline Model Analysis
+
+The Baseline Model achieved a test set recall of 0.79 and a F1 score of 0.72, so its overall performance is pretty good but can still be improved. The recall and F1 scores are also similar to its training scores so it is unlikely that it is overfitting. 
+
+### Improving on Baseline
+
+To improve on the model, we added a new variable, `herald_diff`, which indicates how many more rift heralds the opposing team has. We will also added binary variables for whether Neeko or her opponent was performing better at 15 minutes. Lastly, we standardized some of the numeric columns so we could know how much better in general her stats are at 15 minutes that in other games. 
+
+Furthermore, we utilized different techniques to find the best model overall. First we searched for the best threshold to use in the `LogisticRegression` model. Next, we tried a `RandomForestClassifier` and hypertuned its parameters using `GridSearchCV` to find the best `min_samples_split`, `max_depth`, and `criterion`. 
+
+## Final Model
+
+In the end, we decided to choose the `RandomForestClassifier` model with tuned hyperparameters (`criterion` = 'entropy', `max_depth` = 22, and `min_samples_split` = 40) as the final model.  
+Although our base model actually had a higher recall score (testing set = 0.79), this final model has a higher F1 score (0.74) and a much better accuracy (0.72). Since we still do care about False Positives too, we decided to go with the model with the higher F1 score overall. 
+
+Our final model probably performed better than the Baseline model because we added more features and preprocessing steps. Also, a `RandomForestClassifier` fits many trees to find the best prediction. 
 
 
 
