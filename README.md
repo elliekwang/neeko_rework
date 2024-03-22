@@ -39,21 +39,24 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
 
 ## Univariate Data:
 <iframe
-  src="univariate/file-name.html"
+  src="assets/univariate.html"
   width="800"
-  height="600"
+  height="500"
   frameborder="0"
 ></iframe>
 
-This plot shows the distribution of positions that Neeko played. From the plot, we can see that `mid` is the most played position by Neeko. 
+Working with only data from games that Neeko played, this plot shows the distribution of positions that Neeko played. From the plot, we can see that `mid` is the most played position by Neeko. 
 
 ## Bivariate Data:
+
 <iframe
-  src="assets/file-name.html"
+  src="assets/bivariate.html"
   width="800"
-  height="600"
+  height="500"
   frameborder="0"
 ></iframe>
+
+This plot (Neeko only) shows the relationship between the column `goldat15` and `csat15`, which are the amount of gold collected at 15 minutes and the number of minions killed at 15 minutes by Neeko. We can see a positive correlation between the two variables since as the amount of gold collected increases, the number of minions killed increases as well. 
 
 ## Interesting Aggregates:
 This is a pivot table of the number of games with neeko from patch 12.10 to 14.05, seperated by the position she was played in. It is interesting because we can see the amount of games she was played in increases over time. 
@@ -121,6 +124,13 @@ A column that is important to our hypothesis test is the `patch` column. However
 **Conclusion:** Since our p-value = 0.0 which is less than our alpha value of 0.5, we conclude that the missingness of `patch` **does** depend on `league`.
 
 <iframe
+  src="assets/patch1_2.html"
+  width="800"
+  height="450"
+  frameborder="0"
+></iframe>
+
+<iframe
   src="assets/patch1.html"
   width="800"
   height="600"
@@ -131,9 +141,16 @@ A column that is important to our hypothesis test is the `patch` column. However
 ### 2. `patch` v. `result`
 **Observed Statistic:** 0.00014377205594040543
 
-**p_value:**: 1.0
+**p_value:** 1.0
 
 **Conclusion:** Since our p-value = 1.0 which is greater than our alpha level of 0.05, we can conclude that the missingness of `patch` **does not** depend on the `result` column. 
+
+<iframe
+  src="assets/fig2_2.html"
+  width="800"
+  height="450"
+  frameborder="0"
+></iframe>
 
 <iframe
   src="assets/patch2.html"
@@ -142,6 +159,29 @@ A column that is important to our hypothesis test is the `patch` column. However
   frameborder="0"
 ></iframe>
 
+
+# Hypothesis Testing
+
+**Question:** Is there a higher proportion of games with a Neeko in it after the Patch 13.9 rework?
+
+**Null:** There is no difference in proportion of games with Neeko before and after the Patch 13.9 rework.
+
+
+**Alternative:** There is a higher proportion of games with Neeko after the Patch 13.9 rework. 
+
+
+**Test Statistic:** Difference in Proportion, more specifically the proportion of games with Neeko after minus before the patch 13.9
+- We chose difference in proportion because our data is categorical and directional.
+- Our observed statistic: 0.1404526229251691
+
+**Significance Level:** 0.05
+- We used a significance level of 5% to increase accuracy of our randomized test result. 
+
+
+**Result p-value:** 0
+- We ran 10,000 repetitions. 
+
+**Conclusion:** As the p-value is 0, we reject the null hypothesis in favor of the alternative hypothesis, which is that there is a higher proportion of games with Neeko after the Patch 13.9 rework. 
 
 
 
