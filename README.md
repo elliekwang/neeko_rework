@@ -45,15 +45,18 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
   frameborder="0"
 ></iframe>
 
-This plot shows the distribution of positions that Neeko played. From the plot, we can see that `mid` is the most played position by Neeko. 
+Working with only data from games that Neeko played, this plot shows the distribution of positions that Neeko played. From the plot, we can see that `mid` is the most played position by Neeko. 
 
 ## Bivariate Data:
+
 <iframe
-  src="assets/file-name.html"
+  src="bivariate/file-name.html"
   width="800"
   height="600"
   frameborder="0"
 ></iframe>
+
+This plot (Neeko only) shows the relationship between the column `goldat15` and `csat15`, which are the amount of gold collected at 15 minutes and the number of minions killed at 15 minutes by Neeko. We can see a positive correlation between the two variables since as the amount of gold collected increases, the number of minions killed increases as well. 
 
 ## Interesting Aggregates:
 This is a pivot table of the number of games with neeko from patch 12.10 to 14.05, seperated by the position she was played in. It is interesting because we can see the amount of games she was played in increases over time. 
