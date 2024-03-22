@@ -39,7 +39,7 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
 
 ## Univariate Data:
 <iframe
-  src="univariate/file-name.html"
+  src="assets/univariate.html"
   width="800"
   height="600"
   frameborder="0"
@@ -50,7 +50,7 @@ Working with only data from games that Neeko played, this plot shows the distrib
 ## Bivariate Data:
 
 <iframe
-  src="bivariate/file-name.html"
+  src="assets/bivariate.html"
   width="800"
   height="600"
   frameborder="0"
