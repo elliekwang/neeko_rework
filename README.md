@@ -126,7 +126,7 @@ A column that is important to our hypothesis test is the `patch` column. However
 <iframe
   src="assets/patch1_2.html"
   width="800"
-  height="400"
+  height="450"
   frameborder="0"
 ></iframe>
 
@@ -148,14 +148,14 @@ A column that is important to our hypothesis test is the `patch` column. However
 <iframe
   src="assets/fig2_2.html"
   width="800"
-  height="600"
+  height="450"
   frameborder="0"
 ></iframe>
 
 <iframe
   src="assets/patch2.html"
   width="800"
-  height="400"
+  height="600"
   frameborder="0"
 ></iframe>
 
