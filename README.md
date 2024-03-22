@@ -146,7 +146,7 @@ A column that is important to our hypothesis test is the `patch` column. However
 **Conclusion:** Since our p-value = 1.0 which is greater than our alpha level of 0.05, we can conclude that the missingness of `patch` **does not** depend on the `result` column. 
 
 <iframe
-  src="assets/patch2_2.html"
+  src="assets/fig2_2.html"
   width="800"
   height="600"
   frameborder="0"
