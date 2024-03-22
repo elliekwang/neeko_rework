@@ -41,7 +41,7 @@ We cleaned the dataset this way to make the data more compatible to  answer our 
 <iframe
   src="assets/univariate.html"
   width="800"
-  height="400"
+  height="500"
   frameborder="0"
 ></iframe>
 
@@ -52,7 +52,7 @@ Working with only data from games that Neeko played, this plot shows the distrib
 <iframe
   src="assets/bivariate.html"
   width="800"
-  height="400"
+  height="500"
   frameborder="0"
 ></iframe>
 
@@ -145,6 +145,29 @@ A column that is important to our hypothesis test is the `patch` column. However
   frameborder="0"
 ></iframe>
 
+
+# Hypothesis Testing
+
+**Question**: Is there a higher proportion of games with a Neeko in it after the Patch 13.9 rework?
+
+**Null**: There is no difference in proportion of games with Neeko before and after the Patch 13.9 rework.
+
+
+**Alternative**: There is a higher proportion of games with Neeko after the Patch 13.9 rework. 
+
+
+**Test Statistic**: Difference in Proportion, more specifically the proportion of games with Neeko after minus before the patch 13.9
+- We chose difference in proportion because our data is categorical and directional.
+- Our observed statistic: 0.1404526229251691
+
+**Significance Level**: 0.05
+- This is a standard hypothesis test. 
+
+
+**Result p-value**: 0
+- We ran 10,000 repetitions. 
+
+**Conclusion**: As the p-value is 0, we reject the null hypothesis in favor of the alternative hypothesis, which is that there is a higher proportion of games with Neeko after the Patch 13.9 rework. 
 
 
 
